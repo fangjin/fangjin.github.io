@@ -1,402 +1,537 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="GWU Data Discovery Website" />
 
-	<head>
+    <title>News</title>
 
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="GWU Data Discovery Website">
-		
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-		<title>News</title>
+    <!-- Custom styles for this template -->
+    <link href="css/data-discovery.css" rel="stylesheet" />
 
-		<!-- Bootstrap core CSS -->
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-		<!-- Custom styles for this template -->
-		<link href="css/data-discovery.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-140015433-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      gtag("config", "UA-140015433-1");
+    </script>
+  </head>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140015433-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <img class="navbar-brand-image" src="images/Texas-Tech-Logo.png" />
 
-		  gtag('config', 'UA-140015433-1');
-		</script>
-	</head>
+      <!--<img class="navbar-brand-image text-center" src="images/ttu.png">-->
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Data Discovery Lab</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="people.html">People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teaching.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="research.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownPortfolio"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownPortfolio"
+              >
+                <a
+                  class="dropdown-item"
+                  href="https://dexiuma.github.io/6289_one_page/"
+                  >Image Interpretation</a
+                >
+                <a class="dropdown-item" href="west-texas-water.html"
+                  >West Texas Water</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datasets.html">Datasets</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="covid19app"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                COVID-19 Apps
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="covid19app"
+              >
+                <a class="dropdown-item" href="https://covidtracking.app"
+                  >Covid-19 Tracking</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="https://hydrofriend.github.io/covid-knowledge-graph/"
+                  >Knowledge Graph
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	<body>
+    <!-- Page Content -->
+    <div class="container" id="news-block">
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">News</h1>
 
-		<!-- Navigation -->
-		<nav class="navbar navbar-expand-lg navbar-dark">
-			<img class="navbar-brand-image" src="images/Texas-Tech-Logo.png">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">News</li>
+      </ol>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Fang Jin Received the CAREER Award from NSF
+              <small style="float: right">June, 2023 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                The award will provide five-year support totaling $550K, on
+                proposal titled "CAREER: Unified Model-agnostic Interpretation
+                Framework for Deep Predictive Models." Single PI: Fang Jin. The
+                abstract of the award can be found
+                <a
+                  href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238700&HistoricalAwards=false"
+                  >here</a
+                >. Thanks, NSF!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              GWU funded our research about medical image interpretation
+              <small style="float: right">Oct 1st, 2022 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Our proposal of "Deep Learning Interpretation Framework for
+                Medical Images" has been awarded funding from GWU CDRF (FY23) -
+                Cross Disciplinary Research Fund, $50K, PI: Fang Jin. Thanks,
+                GWU.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Our tutorial was accepted by CIKM 2022
+              <small style="float: right">Oct 2022 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Our Tutorial on Deep Learning Interpretation: A Data Perspective
+                will be presented on Oct 18th, 2022 at CIKM. More details,
+                please visit
+                <a
+                  href="https://sites.google.com/gwmail.gwu.edu/tutorial-proposal-cikm-2022/home"
+                  >here</a
+                >. Thank you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<!--<img class="navbar-brand-image text-center" src="images/ttu.png">-->
-			<div class="container">
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Fang Jin gave a seminar talk about "Trustworthy AI from a
+              statistical perspective" at GWU.
+              <small style="float: right">Sept 26th, 2022 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Invited by the Chair of Computer Science Department, I gave a
+                seimar talk titled with "Trustworthy AI from a statistical
+                perspective" for the Trustworthy AI NRT program at GWU. Glad to
+                have this opportunity!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-				<a class="navbar-brand" href="index.html">Data Discovery Lab</a>
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-						data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-						aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="people.html">People</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="teaching.html">Education</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="research.html">Research</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="publications.html">Publications</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio"
-							   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Projects
-							</a>
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-								<a class="dropdown-item" href="https://hydrofriend.github.io/6289_one_page/">Image Interpretation</a>
-								<a class="dropdown-item" href="west-texas-water.html">West Texas Water</a>
-								
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" href="news.html">News</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="datasets.html">Datasets</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="covid19app"
-							   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								COVID-19 Apps
-							</a>
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="covid19app">
-								<a class="dropdown-item" href="https://covidtracking.app">Covid-19 Tracking</a>
-								<a class="dropdown-item" href="https://hydrofriend.github.io/covid-knowledge-graph/">Knowledge Graph </a>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              FDA funded our research on COVID-19
+              <small style="float: right">April 25th, 2022 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Our proposal was selected by FDA for founding. The full proposal
+                name is “Leveraging Social Media Data to Extract Long-term
+                Patient Experiences following SARS CoV-2 Infection Using Natural
+                Language Processing”. Thank you, FDA. Fang Jin Serves as PI at
+                GWU.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Shunyan Luo successfully passed his PhD defense.
+              <small style="float: right">March 28, 2022 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Shunyan joined Amazon after his graduation. Congratulations, Dr.
+                Luo!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Fang Jin gave a seminar talk at Virgnia Tech.
+              <small style="float: right">Nov 13th, 2021 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                I am very glad to have the opportunity to give a seminar talk in
+                the department of Computer Science, at Virginia Tech Fall Church
+                campus. The talk title is "Deep Learning Interpretation based on
+                Structured Statistical Saliency".
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Fang Jin served as Co-Chair of contest session at ACM SIGSPATIAL
+              2021.
+              <small style="float: right">Nov 2021 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                I am very joyful to serve as Co-Chair in the GIS CUP session.
+                Details can be found at
+                <a href="https://sigspatial2021.sigspatial.org/sigspatial-cup/"
+                  >here</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Fang Jin served as poster session Chair at ICSA 2021.
+              <small style="float: right">Sept 2021 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                I am grateful to searve as Poster session Chair at The 2021 ICSA
+                Applied Statistics Symposium. More details can be seen at
+                https://symposium2021.icsa.org/committees/
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<!-- Page Content -->
-		<div class="container" id="news-block">
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Fang Jin served as a keynote speaker.
+              <small style="float: right">Aug 11, 2021 </small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Jin was invited as a keynote speaker at the Conference on Social
+                Connections to Promote Individual and Community Resilience in
+                Post-COVID-19 Society. She gave a seminar talk about building
+                knowledge graph of COVID-19 using deep learning. More details
+                can be seen at
+                https://socialconnectionsconference.uta.edu/schedule/
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Hongfei Du successully defended and got his Ph.D. degree
+              <small style="float: right">July 27, 2021</small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Hongfei Joined Capital One. Congratulations, Dr. Du!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<!-- Page Heading/Breadcrumbs -->
-			<h1 class="mt-4 mb-3">News</h1>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              NIH Offers 2.2 Million to Support Our R01 Project
+              <small style="float: right">July, 2021</small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                PI: James Hahn, R01DK129809, “Advancing 3D optical body surface
+                scan technology to assess physiological and psychological
+                effects in highly obese population,” 9/1/21-8/31/25, $2,232,783.
+                Fang Jin serves as Co-I.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item">
-					<a href="index.html">Home</a>
-				</li>
-				<li class="breadcrumb-item active">News</li>
-			</ol>
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Fang Jin Received the CAREER Award from NSF
-							<small style="float: right">June, 2023
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> The award will provide five-year support totaling $550K, 
-							on proposal titled "CAREER: Unified Model-agnostic Interpretation Framework for Deep Predictive Models." Single PI: Fang Jin. 
-							The abstract of the award can be found <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2238700&HistoricalAwards=false">here</a>. Thanks, NSF!
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              ICCV 2021 conference accepted one full paper
+              <small style="float: right">July 22, 2021</small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Congrats to Shunyan of his paper "Statistically Consistent
+                Saliency Estimation"! Aceeptance Rate: 25.9%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              AAAI 2021 conference accepted one full paper
+              <small style="float: right">Dec 2, 2020</small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Congrats to Hongfei of his paper "Uncertainty Quantification in
+                CNN Through the Bootstrap of Convex Neural Networks"! Acceptance
+                Rate: 21%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Fang Jin joined George Washington University in the Fall of 2020
+              <small style="float: right">Aug 1, 2020</small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                In the Department of Statistics at GWU, Dr. Jin will teach Deep
+                Learning, Data Mining, Programming, and Databse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Long Nguyen successully defended and got his Ph.D. degree
+              <small style="float: right">June, 2020</small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Congrats, Dr. Nguyen! Long becomes the first phd student
+                graduated from the Data Discovery Lab. Long will join TTU as an
+                instructor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              Water resource management workshop
+              <small style="float: right">July 30, 2018</small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                Dr. Jin's group successfully hosted the 1st Workshop on Water
+                Resource Management in Smart and Connected Communities on July
+                30, 2018.
+              </p>
+              <a
+                style="float: right"
+                href="https://www.fangjinlab.com/projects/water"
+                >Link &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-lg-12 mb-12">
+          <div class="card h-100">
+            <h4 class="card-header">
+              NFS offers $99,940 to support our water resource management
+              project
+              <small style="float: right">September 20, 2017</small>
+            </h4>
+            <div class="card-body">
+              <p class="card-text">
+                PI: Fang Jin, CNS-1737634, “SCC-Planning: Enhancing Water
+                Resource Management and Infrastruc-ture Improvement through
+                Sensing, Computation, and Community Engagement”,
+                9/1/2017–8/31/2019, $99,940. Thank you, NSF.
+              </p>
+              <a
+                style="float: right"
+                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1737634&HistoricalAwards=false"
+                >Link &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    <!-- /.container -->
 
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">GWU funded our research about medical image interpretation
-							<small style="float: right">Oct 1st, 2022
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> Our proposal of "Deep Learning Interpretation Framework for Medical Images" has been awarded funding from
-							GWU CDRF (FY23) - Cross Disciplinary Research Fund, $50K, PI: Fang Jin. Thanks, GWU.
+    <!--<script>-->
+    <!--$(document).ready(function () {-->
+    <!--console.log("hello");-->
+    <!--$.getJSON("news.json", function (result) {-->
+    <!--var count = 0;-->
+    <!--$.each(result, function (i, field) {-->
+    <!--count++;-->
+    <!--if (count <= 2) {-->
+    <!--$("#news-block").append('<div class="row" id="' + field.id + '"><div class="col-lg-12 mb-12"><div class="card h-100"><h4 class="card-header">' + field.title + ' <small style="float: right">' + field.date + '</small> </h4> <div class="card-body"> <p class="card-text">' + field.longerDescription + '</p><a style="float: right" href="' + field.url + '">Link &rarr;</a></div> </div></div> </div>');-->
+    <!--if (count == 1) {-->
+    <!--$("#news-block").append('<br>');-->
+    <!--}-->
+    <!--}-->
+    <!--});-->
+    <!--});-->
+    <!--});-->
+    <!--</script>-->
 
-							</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Our tutorial was accepted by CIKM 2022
-							<small style="float: right">Oct 2022
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> Our Tutorial on Deep Learning Interpretation: A Data Perspective will be
-							presented on Oct 18th, 2022 at CIKM. More details, please visit <a href="https://sites.google.com/gwmail.gwu.edu/tutorial-proposal-cikm-2022/home">here</a>. Thank you!
+    <!-- Footer -->
+    <hr />
+    <footer class="py-3">
+      <div class="container text-center">
+        <img
+          src="images/GW.png"
+          height="75"
+          width="75"
+          class="img-fluid text"
+        />
+        <img
+          src="images/nsf-logo.png"
+          height="75"
+          width="75"
+          class="img-fluid"
+        />
+        <img src="images/NIH.png" height="85" width="85" class="img-fluid" />
+        <img src="images/FDA.jpg" height="53" width="53" class="img-fluid" />
+        <p class="m-2">Copyright &copy; GWU Data Discovery Lab 2024</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
-							</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Fang Jin gave a seminar talk about "Trustworthy AI from a statistical perspective" at GWU.
-							<small style="float: right">Sept 26th, 2022
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> Invited by the Chair of Computer Science Department, I gave a seimar talk titled with "Trustworthy AI from a statistical perspective"
-for the Trustworthy AI NRT program at GWU. Glad to have this opportunity! 
-						
-							</div>
-					</div>
-				</div>
-			</div>	
-			
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">FDA funded our research on COVID-19
-							<small style="float: right">April 25th, 2022
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> Our proposal was selected by FDA for founding. 
-							The full proposal name is “Leveraging Social Media Data to Extract Long-term Patient Experiences following SARS CoV-2 Infection Using Natural Language Processing”. 
-							Thank you, FDA. Fang Jin Serves as PI at GWU. 
-						
-							</div>
-					</div>
-				</div>
-			</div>	
-						<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Shunyan Luo successfully passed his PhD defense.
-							<small style="float: right">March 28, 2022
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> Shunyan joined Amazon after his graduation. Congratulations, Dr. Luo!
-						
-							</div>
-					</div>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Fang Jin gave a seminar talk at Virgnia Tech.
-							<small style="float: right">Nov 13th, 2021
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> I am very glad to have the opportunity to give a seminar talk in the department of Computer Science, 
-							at Virginia Tech Fall Church campus. The talk title is "Deep Learning Interpretation based on Structured Statistical Saliency".
-						
-							</div>
-					</div>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Fang Jin served as Co-Chair of contest session at ACM SIGSPATIAL 2021.
-							<small style="float: right">Nov 2021
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> I am very joyful to serve as Co-Chair in the GIS CUP session. 
-							Details can be found at <a href="https://sigspatial2021.sigspatial.org/sigspatial-cup/">here</a>
-						
-							</div>
-					</div>
-				</div>
-			</div>	
-
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Fang Jin served as poster session Chair at ICSA 2021.
-							<small style="float: right">Sept 2021
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> I am grateful to searve as Poster session Chair at The 2021 ICSA Applied Statistics Symposium.  
-								More details can be seen at https://symposium2021.icsa.org/committees/
-						
-							</div>
-					</div>
-				</div>
-			</div>	
-
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Fang Jin served as a keynote speaker.
-							<small style="float: right">Aug 11, 2021
-							</small>
-						</h4>
-						<div class="card-body"><p class="card-text"> Jin was invited as a keynote speaker at 
-								the Conference on Social Connections to Promote Individual and Community Resilience in Post-COVID-19 Society. 
-							       She gave a seminar talk about building knowledge graph of COVID-19 using deep learning. 
-								More details can be seen at https://socialconnectionsconference.uta.edu/schedule/
-						
-							</div>
-					</div>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Hongfei Du successully defended and got his Ph.D. degree 
-							<small style="float: right">July 27, 2021</small>
-						</h4>
-						<div class="card-body"><p class="card-text">Hongfei Joined Capital One. Congratulations, Dr. Du! 
-						
-							</div>
-					</div>
-				</div>
-			</div>	
-			
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">NIH Offers 2.2 Million to Support Our R01 Project
-							<small style="float: right">July, 2021</small>
-						</h4>
-						<div class="card-body"><p class="card-text">PI: James Hahn, R01DK129809, “Advancing 3D optical body surface scan technology to assess physiological and
-							psychological effects in highly obese population,” 9/1/21-8/31/25, $2,232,783. Fang Jin serves as Co-I.
-						
-							</div>
-					</div>
-				</div>
-			</div>	
-			
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">ICCV 2021 conference accepted one full paper
-							<small style="float: right">July 22, 2021</small>
-						</h4>
-						<div class="card-body"><p class="card-text">Congrats to Shunyan of his paper "Statistically Consistent Saliency Estimation"! Aceeptance Rate: 25.9%.
-						
-							</div>
-					</div>
-				</div>
-			</div>			
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">AAAI 2021 conference accepted one full paper
-							<small style="float: right">Dec 2, 2020</small>
-						</h4>
-						<div class="card-body"><p class="card-text">Congrats to Hongfei of his paper "Uncertainty Quantification in CNN Through the Bootstrap of Convex Neural Networks"! Acceptance Rate: 21%.
-						
-							</div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Fang Jin joined George Washington University in the Fall of 2020
-							<small style="float: right">Aug 1, 2020</small>
-						</h4>
-						<div class="card-body"><p class="card-text">In the Department of Statistics at GWU, Dr. Jin will teach Deep Learning, Data Mining, Programming, and Databse. 
-						
-							</div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Long Nguyen successully defended and got his Ph.D. degree 
-							<small style="float: right">June, 2020</small>
-						</h4>
-						<div class="card-body"><p class="card-text">Congrats, Dr. Nguyen! Long becomes the first phd student graduated from the Data Discovery Lab. 
-						Long will join TTU as an instructor. 
-						
-							</div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">Water resource management workshop
-							<small style="float: right">July 30, 2018</small>
-						</h4>
-						<div class="card-body"><p class="card-text">Dr. Jin's group successfully hosted the 1st Workshop on Water Resource Management in Smart and Connected Communities on July 30, 2018.
-</p><a
-								style="float: right" href="https://www.fangjinlab.com/projects/water">Link &rarr;</a></div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-lg-12 mb-12">
-					<div class="card h-100">
-						<h4 class="card-header">NFS offers $99,940 to support our water resource management project
-							<small style="float: right">September 20, 2017</small>
-						</h4>
-						<div class="card-body"><p class="card-text">PI: Fang Jin, CNS-1737634, “SCC-Planning: Enhancing  Water Resource Management and Infrastruc-ture Improvement through Sensing, 
-							Computation,  and  Community  Engagement”,  9/1/2017–8/31/2019, $99,940. Thank you, NSF. 
-							</p><a
-								style="float: right"
-								href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1737634&HistoricalAwards=false">Link
-							&rarr;</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /.row -->
-		<!-- /.container -->
-
-		<!--<script>-->
-		<!--$(document).ready(function () {-->
-		<!--console.log("hello");-->
-		<!--$.getJSON("news.json", function (result) {-->
-		<!--var count = 0;-->
-		<!--$.each(result, function (i, field) {-->
-		<!--count++;-->
-		<!--if (count <= 2) {-->
-		<!--$("#news-block").append('<div class="row" id="' + field.id + '"><div class="col-lg-12 mb-12"><div class="card h-100"><h4 class="card-header">' + field.title + ' <small style="float: right">' + field.date + '</small> </h4> <div class="card-body"> <p class="card-text">' + field.longerDescription + '</p><a style="float: right" href="' + field.url + '">Link &rarr;</a></div> </div></div> </div>');-->
-		<!--if (count == 1) {-->
-		<!--$("#news-block").append('<br>');-->
-		<!--}-->
-		<!--}-->
-		<!--});-->
-		<!--});-->
-		<!--});-->
-		<!--</script>-->
-
-		<!-- Footer -->
-		<hr>
-		<footer class="py-3">
-			<div class="container text-center">
-				<img src="images/GW.png" height="75" width="75" class="img-fluid text">
-				<img src="images/nsf-logo.png" height="75" width="75" class="img-fluid">
-				<img src="images/NIH.png" height="85" width="85" class="img-fluid">
-				<img src="images/FDA.jpg" height="53" width="53" class="img-fluid">
-				<p class="m-2 ">Copyright &copy; GWU Data Discovery Lab 2024</p>
-			</div>
-			<!-- /.container -->
-		</footer>
-
-		<!-- Bootstrap core JavaScript -->
-		<!--<script src="vendor/jquery/jquery.min.js"></script>-->
-		<!--<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
-
-	</body>
-
+    <!-- Bootstrap core JavaScript -->
+    <!--<script src="vendor/jquery/jquery.min.js"></script>-->
+    <!--<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->
+  </body>
 </html>
